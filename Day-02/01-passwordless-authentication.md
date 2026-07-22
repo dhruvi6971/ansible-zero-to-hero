@@ -18,4 +18,9 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - Go to the file `/etc/ssh/sshd_config.d/60-cloudimg-settings.conf`
 - Update `PasswordAuthentication yes`
 - Restart SSH -> `sudo systemctl restart ssh`
+- New password: `sudo passwd ubuntu`
+
+- Inventory file
+- put inventory.ini in default location set up `/etc/ansible/hosts`
+- yaml
 
